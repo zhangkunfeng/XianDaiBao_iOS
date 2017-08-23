@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ded-w4-eRa">
-                    <rect key="frame" x="0.0" y="185" width="412" height="40"/>
+                    <rect key="frame" x="0.0" y="190" width="412" height="40"/>
                     <subviews>
                         <button opaque="NO" tag="12121" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvY-vN-e77">
                             <rect key="frame" x="0.0" y="8" width="206" height="24"/>
@@ -45,10 +45,10 @@
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKz-cU-tDv">
-                            <rect key="frame" x="81.5" y="38" width="43" height="2"/>
-                            <color key="backgroundColor" red="0.37647058823529411" green="0.71372549019607845" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                            <rect key="frame" x="81.5" y="39" width="43" height="1"/>
+                            <color key="backgroundColor" red="0.10196078431372549" green="0.75294117647058822" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="2" id="0Si-LD-6St"/>
+                                <constraint firstAttribute="height" constant="1" id="0Si-LD-6St"/>
                                 <constraint firstAttribute="width" constant="43" id="avP-bd-ihg"/>
                             </constraints>
                         </view>
@@ -69,7 +69,7 @@
                     </constraints>
                 </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBX-zF-p9e">
-                    <rect key="frame" x="0.0" y="230" width="412" height="116"/>
+                    <rect key="frame" x="0.0" y="231" width="412" height="115"/>
                 </scrollView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最近待收(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vr-oY-YzS">
                     <rect key="frame" x="168" y="69" width="76" height="12"/>
@@ -114,10 +114,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZi-KZ-hLc">
-                    <rect key="frame" x="0.0" y="180" width="412" height="5"/>
+                    <rect key="frame" x="0.0" y="180" width="412" height="10"/>
                     <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="5" id="37r-sq-xOp"/>
+                        <constraint firstAttribute="height" constant="10" id="37r-sq-xOp"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -130,10 +130,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VR-Wc-syl">
-                    <rect key="frame" x="0.0" y="225" width="412" height="5"/>
+                    <rect key="frame" x="0.0" y="230" width="412" height="1"/>
                     <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="5" id="qKi-6c-z1C"/>
+                        <constraint firstAttribute="height" constant="1" id="qKi-6c-z1C"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -174,7 +174,7 @@
                 <constraint firstItem="Omt-Hm-Gl7" firstAttribute="centerY" secondItem="goK-4R-ld8" secondAttribute="centerY" id="bFf-Kj-Wgv"/>
                 <constraint firstItem="I70-N9-OQG" firstAttribute="width" secondItem="qYV-Sh-X0n" secondAttribute="width" id="c6B-oJ-3wQ"/>
                 <constraint firstItem="YBX-zF-p9e" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cEE-3K-bWv"/>
-                <constraint firstItem="YBX-zF-p9e" firstAttribute="top" secondItem="ded-w4-eRa" secondAttribute="bottom" constant="5" id="cXJ-kH-APb"/>
+                <constraint firstItem="YBX-zF-p9e" firstAttribute="top" secondItem="ded-w4-eRa" secondAttribute="bottom" constant="1" id="cXJ-kH-APb"/>
                 <constraint firstItem="goK-4R-ld8" firstAttribute="height" secondItem="Omt-Hm-Gl7" secondAttribute="height" id="cjW-bK-uTe"/>
                 <constraint firstItem="goK-4R-ld8" firstAttribute="width" secondItem="Omt-Hm-Gl7" secondAttribute="width" id="dZp-hl-AqX"/>
                 <constraint firstItem="qYV-Sh-X0n" firstAttribute="centerY" secondItem="I70-N9-OQG" secondAttribute="centerY" id="fry-nT-Ej2"/>
@@ -193,6 +193,7 @@
                 <outlet property="isQianLab" destination="I70-N9-OQG" id="UJk-D7-Z0i"/>
                 <outlet property="leijiLab" destination="qYV-Sh-X0n" id="x05-xw-N4C"/>
                 <outlet property="lineView" destination="nKz-cU-tDv" id="2wn-ZI-NQk"/>
+                <outlet property="lineView_W" destination="avP-bd-ihg" id="EoW-92-ezO"/>
                 <outlet property="scrollView" destination="YBX-zF-p9e" id="ewB-tE-E1y"/>
                 <outlet property="yestLab" destination="sus-ea-eQr" id="WGI-oo-ZgB"/>
             </connections>

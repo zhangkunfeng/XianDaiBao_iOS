@@ -1,0 +1,24 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "b3d7922e-8bf5-4a32-afa5-f5d9f0169015++7087" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "b3d7922e-8bf5-4a32-afa5-f5d9f0169015++7087" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C6DBB7F4-EBC7-4B0E-A12E-2352E5FD777E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "b3d7922e-8bf5-4a32-afa5-f5d9f0169015++7087" : "%E9%92%B1%E8%B7%AF%E7%90%86%E8%B4%A21.0.3\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MoneyRoad",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MoneyRoad.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.1.100:9999\/tshop",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "b3d7922e-8bf5-4a32-afa5-f5d9f0169015++7087"
+    }
+  ]
+}

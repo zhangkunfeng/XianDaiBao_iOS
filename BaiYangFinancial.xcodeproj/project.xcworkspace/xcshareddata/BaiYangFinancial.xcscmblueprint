@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8146121AED70D355C51F8D82620705C07A68B611",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "b3d7922e-8bf5-4a32-afa5-f5d9f0169015++7087" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8146121AED70D355C51F8D82620705C07A68B611" : 9223372036854775807,
+    "b3d7922e-8bf5-4a32-afa5-f5d9f0169015++7087" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A7A842A3-2B31-48AF-8C23-BD5A08CE8C39",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8146121AED70D355C51F8D82620705C07A68B611" : "xindaibao_ios\/",
+    "b3d7922e-8bf5-4a32-afa5-f5d9f0169015++7087" : "BaiYangFinancial%201.0%202\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BaiYangFinancial",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BaiYangFinancial.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhangkunfeng\/XianDaiBao_iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8146121AED70D355C51F8D82620705C07A68B611"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.1.100:9999\/tshop",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "b3d7922e-8bf5-4a32-afa5-f5d9f0169015++7087"
+    }
+  ]
+}

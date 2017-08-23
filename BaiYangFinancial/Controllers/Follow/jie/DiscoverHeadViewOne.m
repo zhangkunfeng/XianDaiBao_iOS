@@ -12,6 +12,7 @@
 @interface DiscoverHeadViewOne ()
 @property (weak, nonatomic) IBOutlet UIView *lineView;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *lineView_W;
 
 
 @end
@@ -30,6 +31,12 @@
     self.scrollView.pagingEnabled = YES;
     self.scrollView.scrollEnabled = NO;
     _selectBtn = self.allBtn;
+    
+    CGFloat scrollX = 17;
+
+    CGFloat lineV_W = Screen_Width * 0.5 - scrollX * 2;
+    self.lineView_W.constant = lineV_W;
+    [self allBtnAction:self.allBtn];
 }
 
 
@@ -40,18 +47,29 @@
     [self selectChangeBtn:sender];
 //    [self.scrollView setContentOffset:<#(CGPoint)#>]
     
-    CGFloat scrollX = sender.frame.origin.x
-                     +sender.frame.size.width/2
-                     -43/2;
-    self.lineView.frame = CGRectMake(scrollX, self.lineView.frame.origin.y, self.lineView.frame.size.width, self.lineView.frame.size.height);
+//    CGFloat scrollX = sender.frame.origin.x
+//                     +sender.frame.size.width/2
+//                     -43/2;
+    CGFloat scrollX = 17;
+    CGFloat w = Screen_Width * 0.5 - scrollX * 2;
+    
+//    self.lineView.frame = CGRectMake(scrollX, self.lineView.frame.origin.y, self.lineView.frame.size.width, self.lineView.frame.size.height);
+    
+    self.lineView.frame = CGRectMake(scrollX, self.lineView.frame.origin.y, w, self.lineView.frame.size.height);
 }
 - (IBAction)ingBtnAction:(UIButton *)sender {
    [self selectChangeBtn:sender];
-    CGFloat scrollX = sender.frame.origin.x
-    +sender.frame.size.width/2
-    -43/2;
+//    CGFloat scrollX = sender.frame.origin.x
+//    +sender.frame.size.width/2
+//    -43/2;
     
-    self.lineView.frame = CGRectMake(scrollX, self.lineView.frame.origin.y, self.lineView.frame.size.width, self.lineView.frame.size.height);
+//    self.lineView.frame = CGRectMake(scrollX, self.lineView.frame.origin.y, self.lineView.frame.size.width, self.lineView.frame.size.height);
+    
+    
+    CGFloat scrollX = 17;
+    CGFloat w = Screen_Width * 0.5 - scrollX * 2;
+    
+    self.lineView.frame = CGRectMake(Screen_Width * 0.5 + scrollX, self.lineView.frame.origin.y, w, self.lineView.frame.size.height);
 }
 - (IBAction)endAction:(UIButton *)sender {
     [self selectChangeBtn:sender];
@@ -62,6 +80,9 @@
         [_selectBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _selectBtn = btn;
     }
-    [btn setTitleColor:[UIColor colorWithHex:@"#60B8D3"] forState:UIControlStateNormal];
+    
+    [btn setTitleColor:[UIColor colorWithHex:@"#1AC0F0"] forState:UIControlStateNormal];
+
+//    [btn setTitleColor:[UIColor colorWithHex:@"#60B8D3"] forState:UIControlStateNormal];
 }
 @end
