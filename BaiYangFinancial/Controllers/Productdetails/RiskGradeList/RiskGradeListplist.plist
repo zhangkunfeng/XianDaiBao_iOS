@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>基本无风险</string>
+		<key>image</key>
+		<string>riskGradeA</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>超低风险</string>
+		<key>image</key>
+		<string>riskGradeB</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>低风险</string>
+		<key>image</key>
+		<string>riskGradeC</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>中风险</string>
+		<key>image</key>
+		<string>riskGradeD</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>高风险</string>
+		<key>image</key>
+		<string>riskGradeE</string>
+	</dict>
+</array>
+</plist>

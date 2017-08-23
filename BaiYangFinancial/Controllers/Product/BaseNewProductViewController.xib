@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseNewProductViewController">
+            <connections>
+                <outlet property="NavgationView" destination="Vyg-35-uVf" id="jjW-eQ-rQF"/>
+                <outlet property="view" destination="iN0-l3-epB" id="vQH-De-Q5P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vyg-35-uVf" userLabel="NavigationController View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqh-RF-3kk" userLabel="bottom line">
+                            <rect key="frame" x="0.0" y="63" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="W5z-ZN-U7e"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Bqh-RF-3kk" secondAttribute="bottom" id="2Yy-8R-Zzh"/>
+                        <constraint firstItem="Bqh-RF-3kk" firstAttribute="leading" secondItem="Vyg-35-uVf" secondAttribute="leading" id="K5U-2L-F9X"/>
+                        <constraint firstAttribute="trailing" secondItem="Bqh-RF-3kk" secondAttribute="trailing" id="PUb-bq-97d"/>
+                        <constraint firstAttribute="height" constant="64" id="xdG-qO-20s"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Vyg-35-uVf" secondAttribute="trailing" id="Q8s-EU-fhc"/>
+                <constraint firstItem="Vyg-35-uVf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eUx-aa-5ks"/>
+                <constraint firstItem="Vyg-35-uVf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xWa-Rn-jIK"/>
+            </constraints>
+            <point key="canvasLocation" x="-29" y="67"/>
+        </view>
+    </objects>
+</document>

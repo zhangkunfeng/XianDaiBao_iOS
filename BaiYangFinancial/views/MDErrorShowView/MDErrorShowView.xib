@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6Za-ap-71f" customClass="MDErrorShowView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoData" translatesAutoresizingMaskIntoConstraints="NO" id="otU-wP-GMp">
+                    <rect key="frame" x="129" y="255" width="117" height="117"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="117" id="9YL-in-Id3"/>
+                        <constraint firstAttribute="width" constant="117" id="VfM-aG-Wf6"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwc-TQ-oXt">
+                    <rect key="frame" x="156.5" y="380" width="62" height="30"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                    <state key="normal" title="没有数据">
+                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="contentButtonAction:" destination="6Za-ap-71f" eventType="touchUpInside" id="UYS-3q-WQp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="otU-wP-GMp" secondAttribute="centerY" constant="20" id="NQe-hm-C3q"/>
+                <constraint firstAttribute="centerX" secondItem="bwc-TQ-oXt" secondAttribute="centerX" id="gWp-5O-odT"/>
+                <constraint firstAttribute="centerX" secondItem="otU-wP-GMp" secondAttribute="centerX" id="j54-2i-rMa"/>
+                <constraint firstItem="bwc-TQ-oXt" firstAttribute="top" secondItem="otU-wP-GMp" secondAttribute="bottom" constant="8" id="pwR-md-d5D"/>
+            </constraints>
+            <connections>
+                <outlet property="contentButton" destination="bwc-TQ-oXt" id="Lt6-nL-E3u"/>
+                <outlet property="contentImageView" destination="otU-wP-GMp" id="vr4-4g-D6E"/>
+            </connections>
+            <point key="canvasLocation" x="-29" y="414"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NoData" width="118" height="117"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

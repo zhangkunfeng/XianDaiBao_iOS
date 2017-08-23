@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UniversalWebViewController">
+            <connections>
+                <outlet property="mainWebview" destination="EYj-oF-cQk" id="Ila-ae-WqF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webActivityIndicatorView" destination="Exg-3D-ZbO" id="Pau-nW-S8z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYj-oF-cQk">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" red="0.93609845638275146" green="0.93607044219970703" blue="0.93608629703521729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="nr0-C8-Fbg"/>
+                    </connections>
+                </webView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Exg-3D-ZbO">
+                    <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EYj-oF-cQk" secondAttribute="trailing" id="7cG-5b-LUy"/>
+                <constraint firstAttribute="centerY" secondItem="Exg-3D-ZbO" secondAttribute="centerY" id="GI3-60-47Y"/>
+                <constraint firstAttribute="centerX" secondItem="EYj-oF-cQk" secondAttribute="centerX" id="Tqo-oU-Ztk"/>
+                <constraint firstItem="EYj-oF-cQk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="XMw-q1-wc0"/>
+                <constraint firstItem="EYj-oF-cQk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bM9-Oa-gtN"/>
+                <constraint firstAttribute="bottom" secondItem="EYj-oF-cQk" secondAttribute="bottom" id="hDA-Us-wUc"/>
+                <constraint firstAttribute="centerX" secondItem="Exg-3D-ZbO" secondAttribute="centerX" id="ns7-CP-77M"/>
+            </constraints>
+            <point key="canvasLocation" x="8" y="138"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

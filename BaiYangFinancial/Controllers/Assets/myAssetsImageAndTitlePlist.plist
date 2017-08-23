@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>自动投标</string>
+		<key>image</key>
+		<string>autoBid_image</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>充值提现记录</string>
+		<key>image</key>
+		<string>Recharge_image</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>我的银行卡</string>
+		<key>image</key>
+		<string>myBank_image</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>债权转让</string>
+		<key>image</key>
+		<string>assignment_image</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>邀请好友送红包</string>
+		<key>image</key>
+		<string>inviteFriends</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>账户设置</string>
+		<key>image</key>
+		<string>setting_image</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>关于平台</string>
+		<key>image</key>
+		<string>aboutWeidai_image</string>
+	</dict>
+</array>
+</plist>

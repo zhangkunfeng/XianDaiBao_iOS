@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>修改登录密码</string>
+		<key>image</key>
+		<string>loginpsd_setting</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>设置支付密码</string>
+		<key>image</key>
+		<string>TransactionPsd_setting</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>设置手势密码</string>
+		<key>image</key>
+		<string>关闭手势密码</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>手机认证</string>
+		<key>image</key>
+		<string>iPhoneCertification_setting</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>实名认证</string>
+		<key>image</key>
+		<string>realnameCertification_setting</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>客服电话</string>
+		<key>image</key>
+		<string>kefu_setting</string>
+	</dict>
+</array>
+</plist>

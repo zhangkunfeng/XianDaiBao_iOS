@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="WDInviteUsersTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18868100541" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsk-pn-gpt">
+                        <rect key="frame" x="18" y="18" width="100" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有效邀请人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPl-2Y-Yyo">
+                        <rect key="frame" x="227" y="51" width="75" height="18"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.23921568627450979" green="0.69411764705882351" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-03-16 17:39:22" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNW-wv-aXd">
+                        <rect key="frame" x="18" y="18" width="284" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="stN-e7-qqm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="NNW-wv-aXd" firstAttribute="baseline" secondItem="Dsk-pn-gpt" secondAttribute="baseline" id="BUx-um-WHg"/>
+                    <constraint firstItem="Dsk-pn-gpt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Bgf-8D-Q1L"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="NNW-wv-aXd" secondAttribute="trailing" constant="10" id="Kh6-3m-KuJ"/>
+                    <constraint firstItem="fPl-2Y-Yyo" firstAttribute="trailing" secondItem="NNW-wv-aXd" secondAttribute="trailing" id="VK2-HP-UIE"/>
+                    <constraint firstAttribute="bottom" secondItem="fPl-2Y-Yyo" secondAttribute="bottom" constant="10" id="ZB3-cB-PrP"/>
+                    <constraint firstItem="fPl-2Y-Yyo" firstAttribute="top" secondItem="NNW-wv-aXd" secondAttribute="bottom" constant="12" id="ZrJ-jR-o4z"/>
+                    <constraint firstItem="NNW-wv-aXd" firstAttribute="leading" secondItem="Dsk-pn-gpt" secondAttribute="leading" id="cjG-Gh-2T9"/>
+                    <constraint firstItem="Dsk-pn-gpt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="gsL-ju-z2k"/>
+                    <constraint firstItem="NNW-wv-aXd" firstAttribute="firstBaseline" secondItem="Dsk-pn-gpt" secondAttribute="firstBaseline" id="sGl-sU-VDg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="phoneLabel" destination="Dsk-pn-gpt" id="pOW-jw-5iM"/>
+                <outlet property="statusLabel" destination="fPl-2Y-Yyo" id="aDk-pg-l43"/>
+                <outlet property="timeLabel" destination="NNW-wv-aXd" id="1bs-o1-y4f"/>
+            </connections>
+            <point key="canvasLocation" x="435" y="393"/>
+        </tableViewCell>
+    </objects>
+</document>

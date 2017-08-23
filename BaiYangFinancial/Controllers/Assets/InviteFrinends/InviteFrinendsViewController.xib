@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InviteFrinendsViewController">
+            <connections>
+                <outlet property="BottomShareButton" destination="Qw1-8k-rgP" id="AZ1-QY-OVD"/>
+                <outlet property="ContentButton" destination="FjL-UM-rxn" id="XA8-JT-46c"/>
+                <outlet property="QrcodeImageView" destination="V6w-7n-hpE" id="cy0-mc-GYk"/>
+                <outlet property="activityIndicatorView" destination="fih-Oa-Pum" id="LuS-fx-hA2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="1005"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aT-2N-dl2">
+                    <rect key="frame" x="0.0" y="64" width="320" height="941"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zd-dM-7s4">
+                            <rect key="frame" x="0.0" y="20" width="320" height="260"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="codeRedenvelope.png" translatesAutoresizingMaskIntoConstraints="NO" id="EZO-3C-aMa">
+                                    <rect key="frame" x="40" y="0.0" width="240" height="260"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="260" id="9PK-gX-AH6"/>
+                                        <constraint firstAttribute="width" constant="240" id="Gad-DV-8zv"/>
+                                    </constraints>
+                                </imageView>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="fih-Oa-Pum">
+                                    <rect key="frame" x="150" y="72" width="20" height="20"/>
+                                </activityIndicatorView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V6w-7n-hpE">
+                                    <rect key="frame" x="90" y="12" width="140" height="140"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="140" id="nQe-Lz-tud"/>
+                                        <constraint firstAttribute="height" constant="140" id="tyk-7S-Em0"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.98431372549999996" green="0.86666666670000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="centerX" secondItem="fih-Oa-Pum" secondAttribute="centerX" id="DTB-gT-VOf"/>
+                                <constraint firstItem="V6w-7n-hpE" firstAttribute="top" secondItem="3zd-dM-7s4" secondAttribute="top" constant="12" id="PLa-4a-hY2"/>
+                                <constraint firstAttribute="centerX" secondItem="EZO-3C-aMa" secondAttribute="centerX" id="T97-ts-Twv"/>
+                                <constraint firstAttribute="bottom" secondItem="EZO-3C-aMa" secondAttribute="bottom" id="WRl-1D-gXv"/>
+                                <constraint firstItem="fih-Oa-Pum" firstAttribute="top" secondItem="3zd-dM-7s4" secondAttribute="top" constant="72" id="Woo-0r-xRd"/>
+                                <constraint firstAttribute="height" constant="260" id="cph-VH-Zen"/>
+                                <constraint firstAttribute="centerX" secondItem="V6w-7n-hpE" secondAttribute="centerX" id="eIU-Cr-KTv"/>
+                                <constraint firstItem="EZO-3C-aMa" firstAttribute="top" secondItem="3zd-dM-7s4" secondAttribute="top" id="o1y-Hc-jEY"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="扫一扫上面的二维码，就能享受福利！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KY3-cb-8Ue">
+                            <rect key="frame" x="24" y="308" width="272" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.22745098039215686" green="0.22745098039215686" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请细则" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myf-zT-hfd">
+                            <rect key="frame" x="132" y="430" width="56" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="56" id="KRv-TX-PYk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.93725490196078431" green="0.33725490196078434" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfB-qf-tqe" userLabel="leftLine">
+                            <rect key="frame" x="10" y="438" width="112" height="1"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.33725490200000002" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="65u-ZN-WNY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aQ-5F-faV" userLabel="rightLine">
+                            <rect key="frame" x="198" y="438" width="112" height="1"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.33725490200000002" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="dPo-uk-0et"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69d-Ur-pi6">
+                            <rect key="frame" x="10" y="467" width="300" height="151"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.只有您的好友通过推荐链接填写手机号并注册，才能获得红包哦！" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdu-mk-QPW">
+                                    <rect key="frame" x="15" y="67" width="270" height="32"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.93725490199999995" green="0.33725490200000002" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.复制链接分享至微信朋友圈，微博，qq等，会收到意想不到的惊喜哦！" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbX-4b-nmk">
+                                    <rect key="frame" x="15" y="104" width="270" height="32"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.93725490199999995" green="0.33725490200000002" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.每成功邀请一位好友在注册后30天内累计投资1000元即可获得10元现金红包，邀请越多，红包越多!(每人封顶邀请2000人)；" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfE-94-LSZ">
+                                    <rect key="frame" x="15" y="15" width="270" height="47"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.93725490199999995" green="0.33725490200000002" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.9882352941176471" green="0.90588235294117647" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="ZfE-94-LSZ" firstAttribute="trailing" secondItem="kdu-mk-QPW" secondAttribute="trailing" id="18c-9n-jkz"/>
+                                <constraint firstItem="HbX-4b-nmk" firstAttribute="top" secondItem="kdu-mk-QPW" secondAttribute="bottom" constant="5" id="3Pt-Tk-CQN"/>
+                                <constraint firstItem="ZfE-94-LSZ" firstAttribute="top" secondItem="69d-Ur-pi6" secondAttribute="top" constant="15" id="Cqh-1w-NWD"/>
+                                <constraint firstItem="kdu-mk-QPW" firstAttribute="leading" secondItem="HbX-4b-nmk" secondAttribute="leading" id="FKC-0T-nuL"/>
+                                <constraint firstAttribute="bottom" secondItem="HbX-4b-nmk" secondAttribute="bottom" constant="15" id="RKr-Nv-Cj3"/>
+                                <constraint firstItem="kdu-mk-QPW" firstAttribute="top" secondItem="ZfE-94-LSZ" secondAttribute="bottom" constant="5" id="UQG-U1-TK0"/>
+                                <constraint firstItem="ZfE-94-LSZ" firstAttribute="leading" secondItem="69d-Ur-pi6" secondAttribute="leading" constant="15" id="cJl-kB-Xhn"/>
+                                <constraint firstItem="ZfE-94-LSZ" firstAttribute="leading" secondItem="kdu-mk-QPW" secondAttribute="leading" id="eiF-Kk-MaQ"/>
+                                <constraint firstItem="kdu-mk-QPW" firstAttribute="trailing" secondItem="HbX-4b-nmk" secondAttribute="trailing" id="fen-rx-oaz"/>
+                                <constraint firstAttribute="trailing" secondItem="ZfE-94-LSZ" secondAttribute="trailing" constant="15" id="fys-WB-fAY"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qw1-8k-rgP">
+                            <rect key="frame" x="69" y="646" width="181" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="立即分享，拿现金红包&gt;">
+                                <color key="titleColor" red="0.93725490199999995" green="0.33725490200000002" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="InviteFrindsShareButtonAction:" destination="-1" eventType="touchUpInside" id="lvw-Ek-pPV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjL-UM-rxn">
+                            <rect key="frame" x="47" y="356" width="226" height="46"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="分享链接享受现金福利" backgroundImage="RedenvelopeshareButton.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="InviteFrindsShareButtonAction:" destination="-1" eventType="touchUpInside" id="Q1l-j0-Gd7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98431372549019602" green="0.8666666666666667" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Qw1-8k-rgP" firstAttribute="top" secondItem="69d-Ur-pi6" secondAttribute="bottom" constant="28" id="0R8-ed-fcK"/>
+                        <constraint firstItem="3zd-dM-7s4" firstAttribute="leading" secondItem="6aT-2N-dl2" secondAttribute="leading" id="4se-cn-OhE"/>
+                        <constraint firstItem="myf-zT-hfd" firstAttribute="leading" secondItem="DfB-qf-tqe" secondAttribute="trailing" constant="10" id="64K-KX-55P"/>
+                        <constraint firstAttribute="centerX" secondItem="myf-zT-hfd" secondAttribute="centerX" id="7Ls-dv-z7b"/>
+                        <constraint firstAttribute="trailing" secondItem="3zd-dM-7s4" secondAttribute="trailing" id="AZ3-Gt-Vus"/>
+                        <constraint firstAttribute="centerX" secondItem="Qw1-8k-rgP" secondAttribute="centerX" id="Cxf-VR-8vi"/>
+                        <constraint firstItem="69d-Ur-pi6" firstAttribute="leading" secondItem="6aT-2N-dl2" secondAttribute="leading" constant="10" id="J91-lP-vC5"/>
+                        <constraint firstItem="DfB-qf-tqe" firstAttribute="centerY" secondItem="myf-zT-hfd" secondAttribute="centerY" id="KbH-XN-anO"/>
+                        <constraint firstAttribute="centerX" secondItem="3zd-dM-7s4" secondAttribute="centerX" id="M7o-g3-h3b"/>
+                        <constraint firstAttribute="trailing" secondItem="69d-Ur-pi6" secondAttribute="trailing" constant="10" id="O7F-PY-dx8"/>
+                        <constraint firstAttribute="centerX" secondItem="FjL-UM-rxn" secondAttribute="centerX" id="P7e-0c-Uhf"/>
+                        <constraint firstItem="DfB-qf-tqe" firstAttribute="leading" secondItem="6aT-2N-dl2" secondAttribute="leading" constant="10" id="UX6-wn-OXA"/>
+                        <constraint firstAttribute="trailing" secondItem="2aQ-5F-faV" secondAttribute="trailing" constant="10" id="Ulh-o9-hHg"/>
+                        <constraint firstItem="3zd-dM-7s4" firstAttribute="top" secondItem="6aT-2N-dl2" secondAttribute="top" constant="20" id="cQr-XF-h3y"/>
+                        <constraint firstItem="2aQ-5F-faV" firstAttribute="centerY" secondItem="myf-zT-hfd" secondAttribute="centerY" id="eky-Ty-dUf"/>
+                        <constraint firstItem="2aQ-5F-faV" firstAttribute="leading" secondItem="myf-zT-hfd" secondAttribute="trailing" constant="10" id="fGJ-Si-dBC"/>
+                        <constraint firstAttribute="bottom" secondItem="Qw1-8k-rgP" secondAttribute="bottom" constant="30" id="gRp-7M-LZ6"/>
+                        <constraint firstAttribute="centerX" secondItem="KY3-cb-8Ue" secondAttribute="centerX" id="orv-Zi-Ob3"/>
+                        <constraint firstItem="myf-zT-hfd" firstAttribute="top" secondItem="FjL-UM-rxn" secondAttribute="bottom" constant="28" id="txw-3l-Sub"/>
+                        <constraint firstItem="69d-Ur-pi6" firstAttribute="top" secondItem="myf-zT-hfd" secondAttribute="bottom" constant="20" id="whH-Qu-ZB9"/>
+                        <constraint firstItem="FjL-UM-rxn" firstAttribute="top" secondItem="KY3-cb-8Ue" secondAttribute="bottom" constant="28" id="y0H-XZ-muZ"/>
+                        <constraint firstItem="KY3-cb-8Ue" firstAttribute="top" secondItem="3zd-dM-7s4" secondAttribute="bottom" constant="28" id="zvw-xR-z3j"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6aT-2N-dl2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="GNO-Tf-Rbf"/>
+                <constraint firstItem="6aT-2N-dl2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GnD-XH-X49"/>
+                <constraint firstAttribute="trailing" secondItem="6aT-2N-dl2" secondAttribute="trailing" id="PMK-JN-G6E"/>
+                <constraint firstAttribute="bottom" secondItem="6aT-2N-dl2" secondAttribute="bottom" id="afU-S2-9dh"/>
+                <constraint firstAttribute="centerX" secondItem="6aT-2N-dl2" secondAttribute="centerX" id="iUo-US-TJe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="272" y="178.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="RedenvelopeshareButton.png" width="226" height="46"/>
+        <image name="codeRedenvelope.png" width="319" height="319"/>
+    </resources>
+</document>
